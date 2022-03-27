@@ -1,7 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Pages
 import Home from './Pages/Home';
 import Login from './Pages/Login';
@@ -13,12 +12,13 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      
-      <Routes>
-        <Route exact path="/" component={Home} />
-        <Route path="/login" component={Login} />
-        <Route path="/signup" component={Signup} />
-      </Routes>
+      <Router>
+        <Routes>
+          <Route exact path="/" pages={Home} />
+          <Route path="/login" pages={Login} />
+          <Route path="/signup" pages={Signup} />
+        </Routes>
+      </Router>
     </div>
   );
 }

@@ -1,5 +1,5 @@
-import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import React from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const Navigation = () => {
     return (
@@ -8,10 +8,16 @@ const Navigation = () => {
                 <Container>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav>
-                            <Nav.Link href="/">Explore</Nav.Link>
-                            <Nav.Link href="/login">Login</Nav.Link>
-                            <Nav.Link href="/signup">Sign Up</Nav.Link>
+                        <Nav activeKey="/home" onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
+                            <Nav.Item>
+                                <Nav.Link href="/home">Home</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="/login">Login</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="/signup">Sign Up</Nav.Link>
+                            </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
