@@ -15,6 +15,9 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" pages={Home} />
+          {/* <Route path="/stays" pages={Stays} />
+          <Route path="/flights" pages={Flights} />
+          <Route path="/cars" pages={Cars} /> */}
           <Route path="/login" pages={Login} />
           <Route path="/signup" pages={Signup} />
         </Routes>

@@ -1,0 +1,10 @@
+.navbar--brand {
+    width: 60%;
+    margin-left: 50px;
+    padding-left: 50px;
+}
+
+.navbar--links {
+    margin-left: auto;
+    padding-right: 100px;
+}
