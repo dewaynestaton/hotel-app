@@ -3,8 +3,14 @@
     margin-left: 50px;
     padding-left: 50px;
 }
+@media only screen and (min-width: 200px) and (max-width: 988px) {
+    .navbar--brand {
+        margin-left: 30px;
+    }
+}
 
 .navbar--links {
     margin-left: auto;
     padding-right: 100px;
+    max-width: 100%;
 }
